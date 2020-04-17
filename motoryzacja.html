@@ -15,6 +15,15 @@
   <link type="text/css" href="assets/libs/flatpickr/dist/flatpickr.min.css" rel="stylesheet">
   <!-- Purpose CSS -->
   <link rel="stylesheet" href="assets/css/purpose.css" id="stylesheet">
+  <style>input[type=range]::-webkit-slider-thumb:active {
+  background: #36b37e;
+
+    } 
+    input[type=range]::-webkit-slider-thumb {
+  background: #36b37e;
+
+    } 
+    </style>
 </head>
 
 <body>
@@ -24,42 +33,21 @@
       <div class="container px-0">
         <div class="navbar-nav align-items-center">
           <div class="d-none d-lg-inline-block">
-            <span class="navbar-text mr-3">Regenero - zleć naprawę swojego urządzenia</span>
+            <span class="navbar-text mr-3">Regener - zleć naprawę i nadaj priorytet</span>
           </div>
           <div>
+            <ul class="nav">
            
+              <li class="nav-item">
+                <a class="nav-link" style="margin-left: 250px;" href="mailto:info@regener.pl">info@regener.pl</a>
+              </li>
+           
+            </ul>
           </div>
           <div class="ml-auto">
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link" href="pages/utility/support.html">Tel: 575 901 007 </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/utility/support.html">@ info@regenero.pl</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link pr-0" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-user-circle"></i>
-                </a>
-                <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
-                  <h6 class="dropdown-header">User menu</h6>
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-user"></i>Account
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <span class="float-right badge badge-primary">4</span>
-                    <i class="fas fa-envelope"></i>Messages
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-cog"></i>Settings
-                  </a>
-                  <div class="dropdown-divider" role="presentation"></div>
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-sign-out-alt"></i>Sign out
-                  </a>
-                </div>
-              </li>
-            </ul>
+            <li class="nav-item">
+              <a class="nav-link" style="margin-left: 100px;" href="basic-register.html">Dodaj swoją firmę</a>
+            </li>
           </div>
         </div>
       </div>
@@ -75,25 +63,25 @@
         </button>
         <!-- Navbar nav -->
         <div class="collapse navbar-collapse" id="navbar-main-collapse">
-          <ul class="navbar-nav align-items-lg-center">
+          <ul class="navbar-nav align-items-lg-center" style="margin-left: 50px; margin-bottom: 20px;">
             <!-- Home - Overview  -->
             <li class="nav-item ">
-              <a class="nav-link" href="index.html">O nas</a>
+              <a class="nav-link" href="glowna.html">O nas</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="index.html">Elektronika</a>
+              <a class="nav-link" href="elektronika.html">Elektronika</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="index.html">Odzysk Danych</a>
+              <a class="nav-link" href="odzysk.html">Odzysk Danych</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="index.html">Motoryzacja</a>
+              <a class="nav-link" href="motoryzacja.html">Motoryzacja</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="index.html">Inne</a>
+              <a class="nav-link" href="inne.html">Inne</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="index.html">Kontakt</a>
+              <a class="nav-link" href="kontakt.html">Kontakt</a>
             </li>
             <!-- Pages menu -->
       
@@ -105,61 +93,7 @@
       </div>
     </nav>
   </header>
-  <!-- Omnisearch -->
-  <div id="omnisearch" class="omnisearch">
-    <div class="container">
-      <!-- Search form -->
-      <form class="omnisearch-form">
-        <div class="form-group">
-          <div class="input-group input-group-merge input-group-flush">
-            <div class="input-group-prepend">
-              <span class="input-group-text"><i class="fas fa-search"></i></span>
-            </div>
-            <input type="text" class="form-control" placeholder="Type and hit enter ...">
-          </div>
-        </div>
-      </form>
-      <div class="omnisearch-suggestions">
-        <h6 class="heading">Search Suggestions</h6>
-        <div class="row">
-          <div class="col-sm-6">
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a class="list-link" href="#">
-                  <i class="fas fa-search"></i>
-                  <span>macbook pro</span> in Laptops
-                </a>
-              </li>
-              <li>
-                <a class="list-link" href="#">
-                  <i class="fas fa-search"></i>
-                  <span>iphone 8</span> in Smartphones
-                </a>
-              </li>
-              <li>
-                <a class="list-link" href="#">
-                  <i class="fas fa-search"></i>
-                  <span>macbook pro</span> in Laptops
-                </a>
-              </li>
-              <li>
-                <a class="list-link" href="#">
-                  <i class="fas fa-search"></i>
-                  <span>beats pro solo 3</span> in Headphones
-                </a>
-              </li>
-              <li>
-                <a class="list-link" href="#">
-                  <i class="fas fa-search"></i>
-                  <span>smasung galaxy 10</span> in Phones
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
   <div class="main-content">
     <!-- Header (account) -->
     <section class="header-account-page bg-gradient-success d-flex align-items-end" data-offset-top="#header-main">
@@ -195,16 +129,16 @@
             <!-- Change avatar -->
            
             <!-- General information form -->
-            <div class="actions-toolbar py-2 mb-4">
-              <h5 class="mb-1">Informacje o urządzeniu</h5>
-            </div>
+           
             <form>
                <div class="row">
                 <div class="col">
                   <div class="form-group">
-                    <label for="customRange2" class="form-control-label">Priorytet naprawy</label>
+                    <label for="customRange2" class="form-control-label">Ustaw Priorytet naprawy</label>
               <input type="range" class="custom-range" min="1" max="5" id="customRange2">
-             
+              <div class="actions-toolbar py-2 mb-4">
+                <h5 style="text-align: center;" class="mb-1" id='output'></h5>
+              </div>
                   </div>
                 </div>
               </div>
@@ -295,56 +229,39 @@
       </div>
     </section>
   </div>
-  <footer class="footer p-0 footer-light bg-section-secondary" id="footer-main">
-    <div class="container">
-      <div class="py-4">
-        <div class="row align-items-md-center">
-          <div class="col-md-4 mb-4 mb-md-0">
-            <div class="d-flex align-items-center">
-              <p class="text-sm mb-0">&copy; Purpose. 2019 <a href="https://webpixels.io" target="_blank">Webpixels</a>. All rights reserved.</p>
+  <footer id="footer-main">
+    <div class="footer footer-dark bg-gradient-success">
+      <div class="container">
+        <div class="row pt-md">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h3 style="color:aliceblue; margin-right: 30px;">REGENERO.PL</h3>
+
+            <p></p>
+          </div>
+          
+        </div>
+        <div class="row align-items-center justify-content-md-between py-4 mt-4 delimiter-top">
+          <div class="col-md-6">
+            <div class="copyright text-sm font-weight-bold text-center text-md-left">
+              &copy; 2020 <a href="https://webpixels.io" class="font-weight-bold" target="_blank">Created By TG & DC CODE</a>. All rights reserved.
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 mb-4 mb-sm-0">
-            <ul class="nav justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link" href="pages/utility/support.html">Support</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/utility/terms.html">Terms</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/utility/privacy.html">Privacy</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
-              <li class="nav-item">
-                <a class="nav-link" href="https://dribbble.com/webpixels" target="_blank">
-                  <i class="fab fa-dribbble"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.instagram.com/webpixelsofficial" target="_blank">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/webpixels" target="_blank">
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.facebook.com/webpixels" target="_blank">
-                  <i class="fab fa-facebook"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+      
         </div>
       </div>
     </div>
   </footer>
+ <script>
+    var values = [1, '1 - nie śpieszy mi się.', '2 - Poczekam maksymalnie 14 dni.', '3 - Chcę tanio i szybko', '4 - Potrzebuję szybkiej naprawy.', '5 - Potrzebuję sprzętu na wczoraj'];
+
+var input = document.getElementById('customRange2'),
+   output = document.getElementById('output');
+input.oninput = function(){
+    output.innerHTML = values[this.value];
+};
+input.oninput();
+
+</script>
   <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
   <script src="assets/js/purpose.core.js"></script>
   <!-- Page JS -->

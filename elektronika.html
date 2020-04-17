@@ -15,41 +15,17 @@
   <link type="text/css" href="assets/libs/flatpickr/dist/flatpickr.min.css" rel="stylesheet">
   <!-- Purpose CSS -->
   <link rel="stylesheet" href="assets/css/purpose.css" id="stylesheet">
-</head>
-<style>
-  .form-group:focus {
-      border-color: #36b37e;
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px #36b37e;
-  }
-  .select2-container--default .select2-results__option--highlighted[aria-selected], .select2-container--default .select2-results__option[aria-selected=true]{
-    color: #36b37e;
-  }
-  
-textarea:focus,
-.select2-m4b0-result-8msm-2,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="mail"]:focus,
-input[type="search"]:focus,
+  <style>input[type=range]::-webkit-slider-thumb:active {
+  background: #36b37e;
 
-input[type="color"]:focus,
-.uneditable-input:focus {   
-  border-color: #36b37e;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #36b37e;
-  outline: 0 none;
-}
-</style>
+    } 
+    input[type=range]::-webkit-slider-thumb {
+  background: #36b37e;
+
+    } 
+    </style>
+</head>
+
 <body>
   <header class="header header-transparent" id="header-main">
     <!-- Topbar -->
@@ -57,27 +33,21 @@ input[type="color"]:focus,
       <div class="container px-0">
         <div class="navbar-nav align-items-center">
           <div class="d-none d-lg-inline-block">
-            <span class="navbar-text mr-3">Regenero - zleć naprawę swojego urządzenia</span>
+            <span class="navbar-text mr-3">Regener - zleć naprawę i nadaj priorytet</span>
           </div>
           <div>
-           
-          </div>
-          <li class="nav-item">
-            <a class="nav-link" style="margin-left: 150px;"href="pages/utility/support.html">Tel: 575 901 007 </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="margin-left: 50px;" href="pages/utility/support.html">@ info@regenero.pl</a>
-          </li>
-          <div class="ml-auto">
             <ul class="nav">
+           
               <li class="nav-item">
-                <a class="nav-link" style="margin-left: 50px;" href="pages/utility/support.html">Zaloguj się</a>
+                <a class="nav-link" style="margin-left: 250px;" href="mailto:info@regener.pl">info@regener.pl</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" style="margin-left: 50px;" href="pages/utility/support.html">Zarejestruj</a>
-              </li>
-              
+           
             </ul>
+          </div>
+          <div class="ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" style="margin-left: 100px;" href="basic-register.html">Dodaj swoją firmę</a>
+            </li>
           </div>
         </div>
       </div>
@@ -93,25 +63,25 @@ input[type="color"]:focus,
         </button>
         <!-- Navbar nav -->
         <div class="collapse navbar-collapse" id="navbar-main-collapse">
-          <ul class="navbar-nav align-items-lg-center">
+          <ul class="navbar-nav align-items-lg-center" style="margin-left: 50px; margin-bottom: 20px;">
             <!-- Home - Overview  -->
             <li class="nav-item ">
-              <a class="nav-link" href="index.html">O nas</a>
+              <a class="nav-link" href="glowna.html">O nas</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="index.html">Elektronika</a>
+              <a class="nav-link" href="elektronika.html">Elektronika</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="index.html">Odzysk Danych</a>
+              <a class="nav-link" href="odzysk.html">Odzysk Danych</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="index.html">Motoryzacja</a>
+              <a class="nav-link" href="motoryzacja.html">Motoryzacja</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="index.html">Inne</a>
+              <a class="nav-link" href="inne.html">Inne</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="index.html">Kontakt</a>
+              <a class="nav-link" href="kontakt.html">Kontakt</a>
             </li>
             <!-- Pages menu -->
       
@@ -123,8 +93,7 @@ input[type="color"]:focus,
       </div>
     </nav>
   </header>
-  <!-- Omnisearch -->
-  
+
   <div class="main-content">
     <!-- Header (account) -->
     <section class="header-account-page bg-gradient-success d-flex align-items-end" data-offset-top="#header-main">
@@ -160,31 +129,19 @@ input[type="color"]:focus,
             <!-- Change avatar -->
            
             <!-- General information form -->
-            <div class="actions-toolbar py-2 mb-4">
-              <h5 class="mb-1">Priorytet naprawy</h5>
-            </div>
+           
             <form>
                <div class="row">
                 <div class="col">
                   <div class="form-group">
-                    
-                    <select class="custom-select" style="custom-select:focus:">
-                      <option selected>Priorytet naprawy</option>
-                      <option value="1">1  Mogę poczekać z naprawa ile potrzeba.</option>
-                      <option value="2">2  Mogę poczekać maksymalnie 14 dni.</option>
-                      <option value="3">3  Chcę mieć naprawiony sprzęt w 10 dni.</option>
-                      <option value="4">4  Poczekam maksymalnie 7 dni</option>
-                      <option value="5">5  Pilna naprawa</option>
-
-                  </select>
-                   
-      
-                  
-                  
-                    </div>
+                    <label for="customRange2" class="form-control-label">Ustaw Priorytet naprawy</label>
+              <input type="range" class="custom-range" min="1" max="5" id="customRange2">
+              <div class="actions-toolbar py-2 mb-4">
+                <h5 style="text-align: center;" class="mb-1" id='output'></h5>
+              </div>
                   </div>
                 </div>
-              
+              </div>
               <div class="row">
                 <div class="col">
                   <div class="form-group">
@@ -272,56 +229,39 @@ input[type="color"]:focus,
       </div>
     </section>
   </div>
-  <footer class="footer p-0 footer-light bg-section-secondary" id="footer-main">
-    <div class="container">
-      <div class="py-4">
-        <div class="row align-items-md-center">
-          <div class="col-md-4 mb-4 mb-md-0">
-            <div class="d-flex align-items-center">
-              <p class="text-sm mb-0">&copy; Purpose. 2019 <a href="https://webpixels.io" target="_blank">Webpixels</a>. All rights reserved.</p>
+  <footer id="footer-main">
+    <div class="footer footer-dark bg-gradient-success">
+      <div class="container">
+        <div class="row pt-md">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h3 style="color:aliceblue; margin-right: 30px;">REGENERO.PL</h3>
+
+            <p></p>
+          </div>
+          
+        </div>
+        <div class="row align-items-center justify-content-md-between py-4 mt-4 delimiter-top">
+          <div class="col-md-6">
+            <div class="copyright text-sm font-weight-bold text-center text-md-left">
+              &copy; 2020 <a href="https://webpixels.io" class="font-weight-bold" target="_blank">Created By TG & DC CODE</a>. All rights reserved.
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 mb-4 mb-sm-0">
-            <ul class="nav justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link" href="pages/utility/support.html">Support</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/utility/terms.html">Terms</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/utility/privacy.html">Privacy</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
-              <li class="nav-item">
-                <a class="nav-link" href="https://dribbble.com/webpixels" target="_blank">
-                  <i class="fab fa-dribbble"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.instagram.com/webpixelsofficial" target="_blank">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/webpixels" target="_blank">
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.facebook.com/webpixels" target="_blank">
-                  <i class="fab fa-facebook"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+      
         </div>
       </div>
     </div>
   </footer>
+ <script>
+    var values = [1, '1 - nie śpieszy mi się.', '2 - Poczekam maksymalnie 14 dni.', '3 - Chcę tanio i szybko', '4 - Potrzebuję szybkiej naprawy.', '5 - Potrzebuję sprzętu na wczoraj'];
+
+var input = document.getElementById('customRange2'),
+   output = document.getElementById('output');
+input.oninput = function(){
+    output.innerHTML = values[this.value];
+};
+input.oninput();
+
+</script>
   <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
   <script src="assets/js/purpose.core.js"></script>
   <!-- Page JS -->
